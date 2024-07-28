@@ -6,18 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebDriverFactory {
-//    public static WebDriver getWebDriver(String browserType) {
-//        if (browserType.equalsIgnoreCase("firefox")) {
-//            WebDriverManager.firefoxdriver().setup();
-//            return new FirefoxDriver();
-//        } else if (browserType.equalsIgnoreCase("yandex")) {
-//            return null;//WebDriverManager.yandexdriver().setup();
-//            //return new YandexDriver();
-//        } else {
-//            WebDriverManager.chromedriver().setup();
-//            return new ChromeDriver();
-//        }
-//    }
 
     public static WebDriver getWebDriver(String browserType) {
         switch (browserType.toLowerCase()) {

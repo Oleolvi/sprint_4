@@ -45,13 +45,12 @@ public class CreateOrderTest {
     public static Object[][] data() {
         return new Object[][] {
                 {"Бильбо", "Бэггинс", "Ленина 21", "Арбатская", "79213453434", "Header", "14.09.2024", "трое суток"},
-                { "Иван", "Петров", "Южная 1", "Арбатская", "79114565656", "Middle", "20.09.2024", "пятеро суток"},
+                { "Иван", "Петров", "Южная 1", "Сокол", "79114565656", "Middle", "20.09.2024", "пятеро суток"},
         };
     }
 
     @Before
     public void setup() {
-       // WebDriver webDriver = WebDriverFactory.getWebDriver(System.getProperty("browser", "firefox"));
         webDriver.get("https://qa-scooter.praktikum-services.ru/");
     }
 
@@ -74,7 +73,7 @@ public class CreateOrderTest {
 
         rentalPage.successfulOrderCreation();
         assertTrue(rentalPage.successfulOrderCreation());
-        //assertEquals(RENTAL_SUCCESS_TITLE, webDriver.findElement(rentalPage.successfulOrderCreationLocator).getText());
+
     }
     @After
     public void tearDown() {

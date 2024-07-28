@@ -47,6 +47,5 @@ public class RentalPage {
 
     public boolean successfulOrderCreation() {
         return webDriver.findElement(successfulOrderCreationLocator).isDisplayed();
-        // return Assert.assertEquals("Заказ оформлен", successfulOrderCreationLocator);
     }
 }
